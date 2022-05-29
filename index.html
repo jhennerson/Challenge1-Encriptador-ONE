@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagens/logo.png" alt="Logo da alura, letra a em minúsculo">
+    </header>
+    <main>
+        <section class="insercao" id="insercao">
+            <textarea type="text" class="campo-texto-inserido" id="campo-texto-inserido" name="" id="campo-texto-inserido" placeholder="Digite seu texto" cols="40" rows="6"></textarea>
+            <div class="restricao">
+                <img src="imagens/attention.png" alt="Icone com exclamação">
+                <label for="campo-texto-inserido">Apenas letras minúsculas e sem acento.</label>
+            </div>            
+            <div class="botoes">            
+                <button class="botao" id="bt-criptografar" value="Criptografar">Criptografar</button>
+                <button class="botao" id="bt-descriptografar" value="Descriptografar">Descriptografar</button>
+            </div>        
+        </section>    
+        <section class="apresentacao" id="apresentacao">
+            <div class="texto-apresentado">
+                <textarea type="text" class="campo-texto-modificado" name="" id="campo-texto-modificado" cols="24" rows="8" disabled></textarea>
+            </div>
+            <div class="texto-vazio">
+                <div class="texto-vazio-superior">
+                    <label for="campo-texto-modificado">Nenhuma mensagem encontrada</label>
+                </div>
+                <div class="texto-vazio-inferior">
+                    <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                </div>
+            </div>
+            <div class="botoes" id="botoes">
+                <button class="botao" id="bt-copiar" value="Copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="copy">
+            <p> Oracle Next Education- 2022</p>
+        </div>
+        <div class="github">
+            <a href="https://github.com/jhennerson"><img src="imagens/icons8-github-24.png" alt="Icone do Github">Jhennerson Silva</a>
+        </div>        
+    </footer>
+    <script src="scripts/script.js"></script>    
+</body>
+
+</html>
